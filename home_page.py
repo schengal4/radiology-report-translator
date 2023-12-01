@@ -7,7 +7,7 @@ from streamlit_chat import message
 st.set_page_config(page_title="Oncologic Co-Pilot")
 
 st.title('Oncologic Co-Pilot 🩺')
-st.write('Oncologic Co-Pilot is a chatbot that supports physicians with their upcoming surgeries. It can answer questions regarding pre-operative and post-operative care.')
+st.write('Oncologic Co-Pilot is a chatbot that supports physicians with their upcoming surgeries. It can answer questions regarding preoperative, intraoperative, and postoperative aspects of oncologic surgical procedures.')
 
 openai.api_key = os.environ.get('OPENAI-KEY')
 
