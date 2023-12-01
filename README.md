@@ -1,7 +1,5 @@
-# Patient Co-Pilot
-Patient Co-Pilot is a tool intended to help guide patients through their surgery. It uses the ChatGPT API, combined with a specific prompt, to leverage LLMs to answer patient questions about their surgeries. It also includes static informational text and images tailored to the patients' surgery. Patient Co-Pilot is intended to be a helpful tool to streamline communication between patients and doctors. 
-
-Winner of the [August 2023 Health Universe Hackathon](https://www.healthuniverse.com/apps/tia-xin-ydt)
+# Oncologic Co-Pilot
+Oncologic Co-Pilot is a sophisticated tool designed to assist physicians in managing oncologic surgeries. This application utilizes the ChatGPT API with a specialized prompt format to leverage Large Language Models (LLMs) in providing detailed, medically accurate responses to physician inquiries regarding various oncologic surgeries. It also features comprehensive informational content and tailored images specific to different types of oncologic procedures. Oncologic Co-Pilot aims to enhance the communication flow between surgeons and their medical teams, offering a streamlined and efficient way to access surgical information.
 
 ## Setting up the environment
 To set up the environment, first create the environment: `conda create --name op_assistant`.
@@ -10,7 +8,7 @@ Then, to install the necessary packages, run `pip install requirements.txt`.
 This app requires an OpenAI API key to run. To connect the app to your OpenAI Key, run `export OPENAI_KEY = <your_key>` in your terminal.
 
 ## Running the app
-Once you get the environment set up, run `streamlit run home_page.py ` to run the app. The app will prompt you to enter a surgery. The resources page will populate with information about your surgery, and then you can use the chatbot to learn more about your surgery. Currenlty, we have resources loaded in for an appendectomy and a Laparoscopic cholecystectomy.
+After setting up the environment, launch the application with streamlit run home_page.py. The app will prompt you to select an oncologic surgery. The resources page will then display relevant information about the chosen surgery, and the chatbot feature will be available to provide further insights into the surgical procedure. Currently, the app includes resources for procedures like Whipple surgery and radical mastectomy.
 
-## Collaborators
-Mishaal Ali MD, Kate Callon, Jennifer Xu, Edward Yap MD
+## Credits
+This app is a variation that was built from Patient Co-Pilot, by Mishaal Ali MD, Kate Callon, Jennifer Xu, Edward Yap MD
