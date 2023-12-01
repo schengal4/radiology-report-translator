@@ -4,8 +4,8 @@ import openai
 import pandas as pd
 from streamlit_chat import message
 
-st.title('Patient Co-Pilot 🩺')
-st.write('Patient Co-Pilot is a chatbot that supports patients with their upcoming surgeries. It can answer any questions regarding pre-operative and post-operative care.')
+st.title('Oncologic Co-Pilot 🩺')
+st.write('Oncologic Co-Pilot is a chatbot that supports physicians with their upcoming surgeries. It can answer questions regarding pre-operative and post-operative care.')
 
 openai.api_key = os.environ.get('OPENAI-KEY')
 
@@ -35,7 +35,7 @@ def main():
 
     # load previous messages, or empty list if there are no previous messages
     if "messages" not in st.session_state:
-        st.session_state.messages = [{"role": "assistant", "content":"Hi! I'm Patient Co-Pilot. What is your surgery?"}]
+        st.session_state.messages = [{"role": "assistant", "content":"Hi! I'm Oncologic Co-Pilot. What is your surgery?"}]
 
 
 
